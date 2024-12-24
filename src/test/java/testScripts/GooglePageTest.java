@@ -21,8 +21,11 @@ public class GooglePageTest {
 	 // WebElement searchBox = driver.findElement(By.id("APjFqb"));
 	 // WebElement searchBox = driver.findElement(By.name("q"));
 	  WebElement searchBox = driver.findElement(By.className("gLFyf"));
+	  //WebElement searchBox = driver.findElement(By.tagName("textarea");
 	  searchBox.sendKeys("Selenium Tutorials");
-	  searchBox.sendKeys(Keys.ENTER);
+	  //searchBox.sendKeys(Keys.ENTER);
+	  searchBox.submit();
+	
 	  System.out.println("Page Title is:" + driver.getTitle());
 	  driver.navigate().back();
 	  driver.navigate().forward();
